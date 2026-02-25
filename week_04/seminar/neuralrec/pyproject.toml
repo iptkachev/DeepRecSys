@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=80.0", "wheel>=0.46"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neuralrec"
+version = "0.1.0"
+description = "Small training framework"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.10.0",
+    "numpy>=2.2.0",
+    "loguru>=0.7.3",
+]
+
+[project.optional-dependencies]
+flash-attn = [
+    "flash-attn>=2.7.0",
+]
+dev = [
+    "ruff>=0.15.0",
+    "mypy>=1.19.0",
+    "pytest>=9.0.0",
+    "pytest-cov>=7.0.0",
+    "pre-commit>=4.5.0",
+]
+tensorboard = [
+    "tensorboard>=2.20.0",
+]
+huggingface = [
+    "datasets>=4.5.0",
+    "transformers>=4.48.0",
+    "huggingface-hub>=0.36.0",
+]
+all = [
+    "neuralrec[flash-attn,dev,tensorboard,huggingface]",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["neuralrec*"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F"]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v"
