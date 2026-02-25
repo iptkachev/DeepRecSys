@@ -10,7 +10,7 @@ class Constants:
     train_size: int = 7755988
     test_size: int = 254174
     num_test_users: int = 37446
-    num_embeddings: = 157357
+    num_embeddings: int = 157357
 
 
 def check_data_split(
