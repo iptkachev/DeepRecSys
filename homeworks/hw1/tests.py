@@ -10,6 +10,7 @@ class Constants:
     train_size: int = 7755988
     test_size: int = 254174
     num_test_users: int = 37446
+    num_embeddings: = 157357
 
 
 def check_data_split(
@@ -52,6 +53,7 @@ def check_data_split(
     assert train.height == Constants.train_size, "Train size is incorrect"
     assert test.height == Constants.test_size, "Test size is incorrect"
     assert len(test_targets) == Constants.num_test_users, "Test targets size is incorrect"
+    assert embeddings.height == Constants.num_embeddings
     print('All good! :)')
 
 
