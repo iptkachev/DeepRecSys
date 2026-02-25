@@ -6,8 +6,8 @@ This is a course on Deep Learning-based Recommender Systems taught at HSE Univer
 <big><pre>
     1. [Introduction to Recommender Systems](./week_01)
     2. [ML Design of Recommender Systems](./week_02)
-    3. [Two-tower models](./week_03)
-    4. [Two-tower models II](./week_04)
+    3. [Two-Tower Models](./week_03)
+    4. [Two-Tower Models II](./week_04)
 </pre></big>
 
 ## Contributors 
