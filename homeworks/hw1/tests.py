@@ -82,6 +82,16 @@ def check_metrics(
         and np.isclose(out["ndcg"], 0.622038473168458) 
         and np.isclose(out["coverage"], 0.06)
      ), "'evaluate' outputs incorrect values"
+        
+    targets = [1, 2, 2, 2, 3]
+    cands = [10, 2, 30, 1]
+    m = get_metrics(targets, cands, topk=4)
+    assert 0.0 <= m["hitrate"] <= 1.0
+    assert 0.0 <= m["recall"] <= 1.0
+    assert 0.0 <= m["ndcg"] <= 1.0
+    assert np.isclose(m["hitrate"], 1.0) and np.isclose(m["recall"], 2. / 3) and np.isclose(m["ndcg"], 0.49818925746641285), \
+    "'get_metrics' outputs incorrect values"
+
     print('All good! :)')
     
 
@@ -103,8 +113,8 @@ def check_top_pop(metrics):
     check_all_metrics(
         metrics,
         hitrate=0.11237515355445174,
-        recall=0.03036588814350686,
-        ndcg=0.010997994080361367,
+        recall=0.030838751492992932,
+        ndcg=0.011133467835743439,
         coverage=0.0006363063687904452
     )
     print('All good! :)')
