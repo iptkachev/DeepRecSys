@@ -6,7 +6,8 @@ Lecture by [Kirill Khrylchenko](https://github.com/KhrylchenkoKirill)
 Seminar by [Artem Matveev](https://github.com/matfu-pixel)
 
 Youtube:
-* TODO
+* [Lecture](https://www.youtube.com/watch?v=JeX3HzfDyTY)
+* [Seminar](https://youtu.be/V_iwSDcoB4Q)
 
 This week we continue our exploration of deep learning–based ranking models.
 
