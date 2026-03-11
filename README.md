@@ -9,6 +9,7 @@ This is a course on Deep Learning-based Recommender Systems taught at HSE Univer
     3. [Two-Tower Models I](./week_03)
     4. [Two-Tower Models II](./week_04)
     5. [Ranking Models I](./week_05)
+    6. [Ranking Models II](./week_06)
 </pre></big>
 
 ## Contributors 
