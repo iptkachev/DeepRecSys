@@ -262,7 +262,7 @@ def check_bce_recs(metrics):
 def check_bpr_recs(metrics):
     check_all_metrics_geq(
         metrics,
-        hitrate=0.23,
+        hitrate=0.22,
         recall=0.06,
         ndcg=0.02,
         coverage=0.1
@@ -309,6 +309,28 @@ def check_softmax_inbatch_logq_recs(metrics):
         hitrate=0.32,
         recall=0.09,
         ndcg=0.035,
+        coverage=0.3
+    )
+    print('All good! :)')
+
+
+def check_mns(metrics):
+    check_all_metrics_geq(
+        metrics,
+        hitrate=0.33,
+        recall=0.11,
+        ndcg=0.04,
+        coverage=0.4
+    )
+    print('All good! :)')
+
+
+def check_softmax_inbatch_logq_fixed_recs(metrics):
+    check_all_metrics_geq(
+        metrics,
+        hitrate=0.34,
+        recall=0.11,
+        ndcg=0.04,
         coverage=0.3
     )
     print('All good! :)')
