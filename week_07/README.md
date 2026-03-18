@@ -6,7 +6,8 @@ Lecture by [Kirill Khrylchenko](https://github.com/KhrylchenkoKirill)
 Seminar by [Vladimir Baikalov](https://github.com/NonameUntitled)
 
 Youtube:
-* TODO
+* [Lecture](https://youtu.be/LATI_HsAnkk)
+* [Seminar](https://youtu.be/7hYJqQkWfMs)
 
 In week 7 of the course, we move on to sequential recommenders — models that directly model user interaction history.
 
